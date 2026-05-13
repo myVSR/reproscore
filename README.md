@@ -2,6 +2,8 @@
 
 **Separating Readiness from Outcome in Research Software Reproducibility Assessment**
 
+[![DOI](https://zenodo.org/badge/1237448640.svg)](https://doi.org/10.5281/zenodo.20154206)
+
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![Tests](https://img.shields.io/badge/tests-pytest-green.svg)](tests/)
 
