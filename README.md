@@ -153,7 +153,7 @@ result = RRSScorer(rubric=rubric).score("/path/to/repo")
 
 ## Evaluation dataset
 
-The `data/ablation/20260511_101920/` directory contains results for 423 Python/Jupyter repositories stratified across five execution failure modes:
+The `data/ablation/20260511_101920/` directory contains results for 423 Python/Jupyter GitHub repositories drawn from biomedical publications indexed in PubMed Central ([Dataset of a Study of Computational reproducibility of Jupyter notebooks from biomedical publications](https://doi.org/10.5281/zenodo.8226725)) stratified across five execution failure modes:
 
 | Failure mode | n | Description |
 |---|---|---|
@@ -172,3 +172,9 @@ The `data/ablation/20260511_101920/` directory contains results for 423 Python/J
 ## License
 
 GNU General Public License v3.0 — see [LICENSE](LICENSE).
+
+
+## References:
+* Sheeba Samuel, Daniel Mietchen. (2024). [Computational reproducibility of Jupyter notebooks from biomedical publications](https://doi.org/10.1093/gigascience/giad113), GigaScience, 13:giad113, 2024.
+* Sheeba Samuel and Daniel Mietchen. FAIR Jupyter: A Knowledge Graph Approach to Semantic Sharing and Granular Exploration of a Computational Notebook Reproducibility Dataset. In Special Issue on Resources for Graph Data and Knowledge. Transactions on Graph Data and Knowledge (TGDK), Volume 2, Issue 2, pp. 4:1-4:24, Schloss Dagstuhl – Leibniz-Zentrum für Informatik (2024) https://doi.org/10.4230/TGDK.2.2.4
+* Sheeba Samuel, & Daniel Mietchen. (2023). [Dataset of a Study of Computational reproducibility of Jupyter notebooks from biomedical publications](https://doi.org/10.5281/zenodo.8226725) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.8226725
