@@ -1,0 +1,207 @@
+12:33:24  INFO      Analysis started -- log: data/ablation/20260511_101920/analysis.log
+12:33:24  INFO      Bootstrap B=2000
+12:33:24  INFO      Run ID  : 20260511_101920
+12:33:24  INFO      DB md5  : 6740abe8...
+12:33:24  INFO      Repos   : 423
+12:33:24  INFO      Failure mode counts:
+12:33:24  INFO        success              84
+12:33:24  INFO        install_dep          85
+12:33:24  INFO        missing_module       85
+12:33:24  INFO        missing_data         84
+12:33:24  INFO        code_error           85
+12:33:24  INFO      ======================================================================
+12:33:24  INFO      §4.1  CATEGORY MEANS BY FAILURE MODE
+12:33:24  INFO      ======================================================================
+12:33:24  INFO      Mode                       E       A       D       C       S  {'RRS':>6}
+12:33:24  INFO      ----------------------------------------------------------------------
+12:33:24  INFO      success                 10.3    23.0    28.5    68.4    54.2    14.6
+12:33:24  INFO      install_dep             22.8    27.6    37.8    74.6    56.3    26.8
+12:33:24  INFO      missing_module           5.2    20.3    22.9    62.2    40.3     7.0
+12:33:24  INFO      missing_data             4.4    17.0    19.3    61.5    41.9     6.4
+12:33:24  INFO      code_error              11.0    24.1    28.7    67.4    49.0    14.3
+12:33:24  INFO      
+  A=0 rates by failure mode (post-hoc contingency):
+12:33:24  INFO          success               A=0: 20/84 = 24%
+12:33:24  INFO          install_dep           A=0: 7/85 = 8%
+12:33:24  INFO          missing_module        A=0: 17/85 = 20%
+12:33:24  INFO          missing_data          A=0: 20/84 = 24%
+12:33:24  INFO          code_error            A=0: 13/85 = 15%
+12:33:24  INFO        Chi2=9.89  df=4  p=0.0424
+12:33:24  INFO      ======================================================================
+12:33:24  INFO      §4.1  KW H AND POINT-BISERIAL r_pb PER CATEGORY
+12:33:24  INFO      ======================================================================
+12:33:24  INFO      Cat     w_i     r_pb     p_pb         H      p_KW
+12:33:24  INFO      --------------------------------------------------
+12:33:24  INFO      E      0.30   -0.014    0.767     96.89    0.0000 ***
+12:33:24  INFO      A      0.25   +0.016    0.745     16.12    0.0029 **
+12:33:24  INFO      D      0.20   +0.028    0.572     53.09    0.0000 ***
+12:33:24  INFO      C      0.15   +0.060    0.215     56.55    0.0000 ***
+12:33:24  INFO      S      0.10   +0.152*   0.002     40.19    0.0000 ***
+12:33:24  INFO      Weight vs H rank -- Spearman rho=+0.300  p=0.624  (n=5)
+12:33:24  INFO      
+  Sub-metric r_pb range:
+12:33:24  INFO          Min: -0.079  (sub_config_externalised)  p=0.103
+12:33:24  INFO          Max: +0.145  (sub_notebook_exec_order)  p=0.003
+12:33:24  INFO          Significant (p<0.05): 5/26
+12:33:24  INFO            sub_config_externalised              r_pb=-0.079  p=0.103
+12:33:24  INFO            sub_python_version_declared          r_pb=-0.051  p=0.300
+12:33:24  INFO            sub_data_acquisition_script          r_pb=-0.049  p=0.314
+12:33:24  INFO            sub_hardware_requirements            r_pb=-0.033  p=0.502
+12:33:24  INFO            sub_data_description                 r_pb=-0.031  p=0.523
+12:33:24  INFO            sub_dep_pinning                      r_pb=-0.022  p=0.653
+12:33:24  INFO            sub_import_resolvability             r_pb=-0.020  p=0.678
+12:33:24  INFO            sub_expected_outputs                 r_pb=-0.016  p=0.737
+12:33:24  INFO            sub_reuse_metadata                   r_pb=-0.015  p=0.753
+12:33:24  INFO            sub_doc_structure                    r_pb=-0.012  p=0.803
+12:33:24  INFO            sub_env_bootstrap                    r_pb=-0.008  p=0.862
+12:33:24  INFO            sub_test_file_presence               r_pb=+0.013  p=0.784
+12:33:24  INFO            sub_usage_examples                   r_pb=+0.017  p=0.725
+12:33:24  INFO            sub_docstring_coverage               r_pb=+0.018  p=0.714
+12:33:24  INFO            sub_install_instructions             r_pb=+0.020  p=0.685
+12:33:24  INFO            sub_execution_entry_point            r_pb=+0.021  p=0.661
+12:33:24  INFO            sub_workflow_orchestration           r_pb=+0.041  p=0.396
+12:33:24  INFO            sub_container_spec                   r_pb=+0.042  p=0.394
+12:33:24  INFO            sub_data_pointer                     r_pb=+0.049  p=0.313
+12:33:24  INFO            sub_inline_explanation_density       r_pb=+0.056  p=0.253
+12:33:24  INFO            sub_no_hardcoded_credentials         r_pb=+0.060  p=0.215
+12:33:24  INFO            sub_silent_failure_masking           r_pb=+0.099  p=0.041*
+12:33:24  INFO            sub_ci_presence                      r_pb=+0.103  p=0.035*
+12:33:24  INFO            sub_no_absolute_paths                r_pb=+0.107  p=0.027*
+12:33:24  INFO            sub_seed_management                  r_pb=+0.113  p=0.020*
+12:33:24  INFO            sub_notebook_exec_order              r_pb=+0.145  p=0.003*
+12:33:24  INFO      
+  Cohen's d -- E category (install_dep vs others):
+12:33:24  INFO          install_dep vs missing_module   d=+1.16  KS=0.68  p_KS=<0.001
+12:33:24  INFO          install_dep vs missing_data     d=+1.25  KS=0.68  p_KS=<0.001
+12:33:24  INFO          install_dep vs code_error       d=+0.65  KS=0.49  p_KS=<0.001
+12:33:24  INFO          install_dep vs success          d=+0.74  KS=0.44  p_KS=<0.001
+12:33:26  INFO      ======================================================================
+12:33:26  INFO      §4.1  FULL RRS AUC
+12:33:26  INFO      ======================================================================
+12:33:26  INFO        AUC = 0.535  95% CI [0.471, 0.602]  (B=2000)
+12:33:26  INFO      ======================================================================
+12:33:26  INFO      §4.3  GATE FUNCTION ROBUSTNESS
+12:33:26  INFO      ======================================================================
+12:33:28  INFO        Linear  (k=1)   : 0.536  CI [0.471, 0.602]
+12:33:28  INFO        Current (default): 0.535  CI [0.471, 0.602]
+12:33:28  INFO        Strict  (k=2.5)  : 0.534
+12:33:28  INFO        Tau sweep 10-70: min=0.528  max=0.536  range=0.008
+12:33:28  INFO      ======================================================================
+12:33:28  INFO      BINARY SUB-METRICS (>90% repos return 0 or 100)
+12:33:28  INFO      ======================================================================
+12:33:28  INFO        sub_ci_presence                       100%  BINARY
+12:33:28  INFO        sub_config_externalised                78%  continuous
+12:33:28  INFO        sub_container_spec                     97%  BINARY
+12:33:28  INFO        sub_data_acquisition_script           100%  BINARY
+12:33:28  INFO        sub_data_description                   70%  continuous
+12:33:28  INFO        sub_data_pointer                       56%  continuous
+12:33:28  INFO        sub_dep_pinning                        65%  continuous
+12:33:28  INFO        sub_doc_structure                      65%  continuous
+12:33:28  INFO        sub_docstring_coverage                 23%  continuous
+12:33:28  INFO        sub_env_bootstrap                      96%  BINARY
+12:33:28  INFO        sub_execution_entry_point              91%  BINARY
+12:33:28  INFO        sub_expected_outputs                   48%  continuous
+12:33:28  INFO        sub_hardware_requirements             100%  BINARY
+12:33:28  INFO        sub_import_resolvability               71%  continuous
+12:33:28  INFO        sub_inline_explanation_density         25%  continuous
+12:33:28  INFO        sub_install_instructions               60%  continuous
+12:33:28  INFO        sub_no_absolute_paths                  77%  continuous
+12:33:28  INFO        sub_no_hardcoded_credentials           98%  BINARY
+12:33:28  INFO        sub_notebook_exec_order                64%  continuous
+12:33:28  INFO        sub_python_version_declared           100%  BINARY
+12:33:28  INFO        sub_reuse_metadata                     39%  continuous
+12:33:28  INFO        sub_seed_management                    84%  continuous
+12:33:28  INFO        sub_silent_failure_masking             87%  continuous
+12:33:28  INFO        sub_test_file_presence                 96%  BINARY
+12:33:28  INFO        sub_usage_examples                     65%  continuous
+12:33:28  INFO        sub_workflow_orchestration             94%  BINARY
+12:33:28  INFO        Total effectively binary: 10/26
+12:33:28  INFO      ======================================================================
+12:33:28  INFO      §4.2  RANK STABILITY (+-50% weight, 20 steps per category)
+12:33:28  INFO      ======================================================================
+12:33:28  INFO      Category       Min tau  Mean tau   Max tau
+12:33:28  INFO      --------------------------------------------
+12:33:28  INFO      E                0.911     0.961     0.998
+12:33:28  INFO      A                0.942     0.972     0.996
+12:33:28  INFO      D                0.959     0.978     0.997
+12:33:28  INFO      C                0.949     0.979     0.999
+12:33:28  INFO      S                0.975     0.987     0.999
+12:33:28  INFO      ======================================================================
+12:33:28  INFO      §4.2  GRID SEARCH (step 0.10) + S SENSITIVITY
+12:33:28  INFO      ======================================================================
+12:33:29  INFO        Configurations : 126
+12:33:29  INFO        AUC range      : 0.509 - 0.581  (spread 0.072)
+12:33:29  INFO        Best AUC       : 0.581  at {'E': 0.1, 'A': 0.1, 'D': 0.1, 'C': 0.2, 'S': 0.5}
+12:33:29  INFO        Default AUC    : 0.535
+12:33:29  INFO        S sensitivity  : wS=0.25 (wA=0.15) -> AUC=0.544  delta=+0.008 vs default
+12:33:29  INFO      ======================================================================
+12:33:29  INFO      §4.4  LEAVE-ONE-CATEGORY-OUT (LOCO)
+12:33:29  INFO      ======================================================================
+12:33:29  INFO        Full model AUC: 0.535  CI [0.471, 0.602]
+12:33:29  INFO        Removed      AUC     DAUC
+12:33:29  INFO        --------------------------
+12:33:29  INFO        None       0.535      ---
+12:33:29  INFO        -E         0.563   +0.028
+12:33:29  INFO        -A         0.556   +0.020
+12:33:29  INFO        -D         0.536   +0.001
+12:33:29  INFO        -C         0.513   -0.022
+12:33:29  INFO        -S         0.514   -0.022
+12:33:29  INFO      
+  LOCO span: 0.513-0.563  (0.050)
+12:33:29  INFO        NOTE: All deltas lie within the 95% bootstrap CI -- none statistically
+12:33:29  INFO              distinguishable from baseline. Pattern consistent with distributed
+12:33:29  INFO              weak contributions (S largest hurt, D slight benefit).
+12:33:29  INFO      ======================================================================
+12:33:29  INFO      §4.5  PARTIAL ROS COMPUTATION AND RCS VALIDATION  [NEW]
+12:33:29  INFO      ======================================================================
+12:33:29  INFO        N component: from success_nb_count / total_exec_count
+12:33:29  INFO        Components: I=79.9  X=19.9  N=25.3  E'=79.9  (all on 0-100 scale)
+12:33:29  INFO        Available weight = 0.75  (delta and T unavailable)
+12:33:29  INFO      
+  alpha = min(0.75, 1.0) x 0.7 = 0.525
+12:33:29  INFO        RCS  = (1 - 0.525) x RRS + 0.525 x ROS_partial
+12:33:29  INFO      
+  Mode                       ROS       RCS       RRS
+12:33:29  INFO        ------------------------------------------------
+12:33:29  INFO        success                  100.0      59.4      14.6
+12:33:29  INFO        install_dep               13.5      19.8      26.8
+12:33:29  INFO        missing_module            40.5      24.6       7.0
+12:33:29  INFO        missing_data              54.5      31.7       6.4
+12:33:29  INFO        code_error                55.1      35.7      14.3
+12:33:29  INFO      
+  ROS component means by failure mode:
+12:33:29  INFO        Mode                       I       X       N   E_prime
+12:33:29  INFO        ------------------------------------------------------
+12:33:29  INFO        success                100.0   100.0   100.0     100.0
+12:33:29  INFO        install_dep              0.0     0.0     1.3     100.0
+12:33:29  INFO        missing_module         100.0     0.0     3.8       0.0
+12:33:29  INFO        missing_data           100.0     0.0     8.6     100.0
+12:33:29  INFO        code_error             100.0     0.0    13.3     100.0
+12:33:32  INFO      
+  AUC comparison:
+12:33:32  INFO        Metric                         AUC            95% CI
+12:33:32  INFO        ------------------------------------------------------
+12:33:32  INFO        RRS (static only)           0.535  [0.471, 0.602]
+12:33:32  INFO        ROS_partial (exec only)     1.000  [1.000, 1.000]
+12:33:32  INFO        RCS (static + exec)         0.993  [0.986, 0.998]
+12:33:32  INFO      
+  RCS lift over RRS: +0.457 AUC
+12:33:32  INFO        ROS lift over RRS: +0.465 AUC
+12:33:32  INFO      ======================================================================
+12:33:32  INFO      §4.6  ENHANCED BASELINES
+12:33:32  INFO      ======================================================================
+12:33:32  INFO        Metric                                       AUC  Note
+12:33:32  INFO        --------------------------------------------------------------------
+12:33:32  INFO        Random classifier                         0.500  
+12:33:32  INFO        Count-based (frac sub-metrics>0)          0.509  
+12:33:32  INFO        Equal weight, no gate                     0.541  
+12:33:32  INFO        Equal weight, with gate                   0.543  
+12:33:32  INFO        Linear (no gate, default w)               0.536  CI [0.471,0.602]
+12:33:32  INFO        Best sub-metric (sub_notebook_exec_order)  0.638  
+12:33:32  INFO        S category alone                          0.611  
+12:33:32  INFO        E category alone                          0.503  
+12:33:32  INFO        RRS (default weights + gate)              0.535  CI [0.471,0.602]
+12:33:32  INFO        ROS_partial (exec only)                   1.000  CI [1.000,1.000]
+12:33:32  INFO        RCS (static + exec combined)              0.993  CI [0.986,0.998]
+12:33:32  INFO      Results written to data/ablation/20260511_101920/analysis_results.json
+12:33:32  INFO      Done.

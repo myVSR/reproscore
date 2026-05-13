@@ -1,0 +1,94 @@
+# ReproScore Default Rubric
+# Community-configurable weights and gate parameters.
+# All weights must sum to 1.0 (+/- 0.01).
+# Gate parameters: tau (threshold, 0-100), k (steepness, >1)
+
+name: default
+version: "1.0"
+description: >
+  Default ReproScore rubric grounded in literature-estimated predictive
+  validity correlations (Samuel & Mietchen 2024; Stodden et al. 2018).
+
+categories:
+  E:
+    name: Environment Specification
+    weight: 0.30
+    tau: 40
+    k: 1.5
+    description: >
+      dep_pinning, container_spec, env_bootstrap, python_version_declared.
+      Highest correlation with execution success (r≈0.51–0.62).
+
+  A:
+    name: Data Accessibility
+    weight: 0.25
+    tau: 30
+    k: 1.5
+    description: >
+      data_description, data_pointer, workflow_orchestration,
+      data_acquisition_script.
+
+  D:
+    name: Documentation
+    weight: 0.20
+    tau: 20
+    k: 1.2
+    description: >
+      doc_structure, install_instructions, usage_examples,
+      inline_explanation_density, execution_entry_point, docstring_coverage,
+      reuse_metadata.
+
+  C:
+    name: Code Portability
+    weight: 0.15
+    tau: 25
+    k: 1.2
+    description: >
+      Source-code properties that cause execution to fail on another machine:
+      no_absolute_paths, import_resolvability, no_hardcoded_credentials,
+      silent_failure_masking.
+
+  S:
+    name: Reproducibility Signals
+    weight: 0.10
+    tau: 30
+    k: 1.2
+    description: >
+      seed_management, notebook_exec_order, test_file_presence,
+      expected_outputs, ci_presence, config_externalised,
+      hardware_requirements.
+
+# Hard penalty parameters (applied to RRS formula)
+penalties:
+  environment_hard_threshold: 10   # Phard if E < this value
+  data_hard_threshold: 10          # Phard if A < this value
+  environment_hard_penalty: 20     # Points deducted if E < threshold
+  data_hard_penalty: 15            # Points deducted if A < threshold
+  seed_threshold: 50               # Pseed if seed_management_score < this
+  seed_penalty: 10                 # Points deducted for missing seed management
+
+# ROS component weights (must sum to 1.0)
+ros_components:
+  I:  # Install success
+    weight: 0.30
+    description: "pip install / conda env create exit code = 0"
+  X:  # Execution success
+    weight: 0.25
+    description: "Entry-point script or notebook exit code = 0"
+  delta:  # Output determinism
+    weight: 0.20
+    description: "Hash equality of outputs across n=3 independent runs"
+  N:  # Notebook execution rate
+    weight: 0.10
+    description: "Fraction of .ipynb files that ran to completion (no import errors)"
+  E:  # Environment completeness
+    weight: 0.10
+    description: "Fraction of notebooks free from missing-package (ImportError) failures; directly measures what augmentation fixes"
+  T:  # Test pass rate
+    weight: 0.05
+    description: "pytest / testthat pass percentage in clean env"
+
+# RCS coverage ceiling
+rcs:
+  alpha_max: 0.70   # Maximum weight for ROS in composite
+  alpha_min: 0.10   # Minimum weight when any ROS component is available

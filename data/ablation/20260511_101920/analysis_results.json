@@ -1,0 +1,600 @@
+{
+  "run_id": "20260511_101920",
+  "n_repos": 423,
+  "failure_mode_counts": {
+    "success": 84,
+    "install_dep": 85,
+    "missing_module": 85,
+    "missing_data": 84,
+    "code_error": 85
+  },
+  "category_means_by_mode": {
+    "success": {
+      "E": 10.27,
+      "A": 22.98,
+      "D": 28.47,
+      "C": 68.43,
+      "S": 54.15,
+      "RRS": 14.62
+    },
+    "install_dep": {
+      "E": 22.8,
+      "A": 27.56,
+      "D": 37.81,
+      "C": 74.64,
+      "S": 56.26,
+      "RRS": 26.78
+    },
+    "missing_module": {
+      "E": 5.16,
+      "A": 20.34,
+      "D": 22.93,
+      "C": 62.19,
+      "S": 40.34,
+      "RRS": 7.03
+    },
+    "missing_data": {
+      "E": 4.45,
+      "A": 17.02,
+      "D": 19.29,
+      "C": 61.55,
+      "S": 41.94,
+      "RRS": 6.41
+    },
+    "code_error": {
+      "E": 10.98,
+      "A": 24.09,
+      "D": 28.73,
+      "C": 67.36,
+      "S": 49.05,
+      "RRS": 14.25
+    }
+  },
+  "a_zero_contingency": {
+    "rates_by_mode": {
+      "success": {
+        "n_a_zero": 20,
+        "n_total": 84,
+        "pct": 23.8
+      },
+      "install_dep": {
+        "n_a_zero": 7,
+        "n_total": 85,
+        "pct": 8.2
+      },
+      "missing_module": {
+        "n_a_zero": 17,
+        "n_total": 85,
+        "pct": 20.0
+      },
+      "missing_data": {
+        "n_a_zero": 20,
+        "n_total": 84,
+        "pct": 23.8
+      },
+      "code_error": {
+        "n_a_zero": 13,
+        "n_total": 85,
+        "pct": 15.3
+      }
+    },
+    "chi2": 9.8858,
+    "dof": 4,
+    "p": 0.0424
+  },
+  "kw_stats": {
+    "E": {
+      "weight": 0.3,
+      "r_pb": -0.0144,
+      "p_pb": 0.7671,
+      "H": 96.891,
+      "p_kw": 0.0
+    },
+    "A": {
+      "weight": 0.25,
+      "r_pb": 0.0159,
+      "p_pb": 0.7447,
+      "H": 16.1206,
+      "p_kw": 0.002861
+    },
+    "D": {
+      "weight": 0.2,
+      "r_pb": 0.0276,
+      "p_pb": 0.5718,
+      "H": 53.0913,
+      "p_kw": 0.0
+    },
+    "C": {
+      "weight": 0.15,
+      "r_pb": 0.0604,
+      "p_pb": 0.215,
+      "H": 56.5463,
+      "p_kw": 0.0
+    },
+    "S": {
+      "weight": 0.1,
+      "r_pb": 0.1525,
+      "p_pb": 0.0017,
+      "H": 40.1895,
+      "p_kw": 0.0
+    },
+    "weight_H_spearman": {
+      "rho": 0.3,
+      "p": 0.6238
+    }
+  },
+  "sub_metric_rpb": {
+    "sub_config_externalised": {
+      "r_pb": -0.0794,
+      "p": 0.1028
+    },
+    "sub_python_version_declared": {
+      "r_pb": -0.0506,
+      "p": 0.2995
+    },
+    "sub_data_acquisition_script": {
+      "r_pb": -0.049,
+      "p": 0.3144
+    },
+    "sub_hardware_requirements": {
+      "r_pb": -0.0327,
+      "p": 0.5021
+    },
+    "sub_data_description": {
+      "r_pb": -0.0312,
+      "p": 0.5228
+    },
+    "sub_dep_pinning": {
+      "r_pb": -0.0219,
+      "p": 0.6533
+    },
+    "sub_import_resolvability": {
+      "r_pb": -0.0202,
+      "p": 0.6782
+    },
+    "sub_expected_outputs": {
+      "r_pb": -0.0164,
+      "p": 0.7371
+    },
+    "sub_reuse_metadata": {
+      "r_pb": -0.0154,
+      "p": 0.7526
+    },
+    "sub_doc_structure": {
+      "r_pb": -0.0122,
+      "p": 0.8029
+    },
+    "sub_env_bootstrap": {
+      "r_pb": -0.0085,
+      "p": 0.8621
+    },
+    "sub_test_file_presence": {
+      "r_pb": 0.0134,
+      "p": 0.7838
+    },
+    "sub_usage_examples": {
+      "r_pb": 0.0172,
+      "p": 0.7245
+    },
+    "sub_docstring_coverage": {
+      "r_pb": 0.0179,
+      "p": 0.7137
+    },
+    "sub_install_instructions": {
+      "r_pb": 0.0197,
+      "p": 0.6855
+    },
+    "sub_execution_entry_point": {
+      "r_pb": 0.0214,
+      "p": 0.6612
+    },
+    "sub_workflow_orchestration": {
+      "r_pb": 0.0414,
+      "p": 0.3962
+    },
+    "sub_container_spec": {
+      "r_pb": 0.0415,
+      "p": 0.3943
+    },
+    "sub_data_pointer": {
+      "r_pb": 0.0492,
+      "p": 0.3126
+    },
+    "sub_inline_explanation_density": {
+      "r_pb": 0.0557,
+      "p": 0.2533
+    },
+    "sub_no_hardcoded_credentials": {
+      "r_pb": 0.0604,
+      "p": 0.2152
+    },
+    "sub_silent_failure_masking": {
+      "r_pb": 0.0992,
+      "p": 0.0414
+    },
+    "sub_ci_presence": {
+      "r_pb": 0.1027,
+      "p": 0.0347
+    },
+    "sub_no_absolute_paths": {
+      "r_pb": 0.1074,
+      "p": 0.0273
+    },
+    "sub_seed_management": {
+      "r_pb": 0.1131,
+      "p": 0.02
+    },
+    "sub_notebook_exec_order": {
+      "r_pb": 0.1454,
+      "p": 0.0027
+    }
+  },
+  "cohens_d_E": {
+    "vs_missing_module": {
+      "d": 1.164,
+      "ks": 0.682,
+      "p_ks": 3.7818083580237564e-19
+    },
+    "vs_missing_data": {
+      "d": 1.253,
+      "ks": 0.68,
+      "p_ks": 8.998549136252611e-20
+    },
+    "vs_code_error": {
+      "d": 0.653,
+      "ks": 0.494,
+      "p_ks": 8.720452016090274e-10
+    },
+    "vs_success": {
+      "d": 0.737,
+      "ks": 0.442,
+      "p_ks": 7.285846104210236e-08
+    }
+  },
+  "full_rrs_auc": {
+    "auc": 0.5355,
+    "ci_95": [
+      0.4711,
+      0.6016
+    ],
+    "bootstrap_B": 2000
+  },
+  "gate_robustness": {
+    "linear_k1": {
+      "auc": 0.5355,
+      "ci_95": [
+        0.4714,
+        0.6022
+      ]
+    },
+    "current": {
+      "auc": 0.5355,
+      "ci_95": [
+        0.4711,
+        0.6016
+      ]
+    },
+    "strict_k25": 0.5341,
+    "tau_sweep": {
+      "range": [
+        10,
+        70
+      ],
+      "min_auc": 0.5281,
+      "max_auc": 0.5362,
+      "span": 0.0081,
+      "values": {
+        "10": 0.5353,
+        "15": 0.5352,
+        "20": 0.5354,
+        "25": 0.5342,
+        "30": 0.5348,
+        "35": 0.5351,
+        "40": 0.5362,
+        "45": 0.5313,
+        "50": 0.5317,
+        "55": 0.5329,
+        "60": 0.5281,
+        "65": 0.5317,
+        "70": 0.535
+      }
+    }
+  },
+  "binary_submetrics": {
+    "details": {
+      "sub_ci_presence": {
+        "pct_binary": 1.0,
+        "is_binary": true
+      },
+      "sub_config_externalised": {
+        "pct_binary": 0.7849,
+        "is_binary": false
+      },
+      "sub_container_spec": {
+        "pct_binary": 0.9669,
+        "is_binary": true
+      },
+      "sub_data_acquisition_script": {
+        "pct_binary": 1.0,
+        "is_binary": true
+      },
+      "sub_data_description": {
+        "pct_binary": 0.7045,
+        "is_binary": false
+      },
+      "sub_data_pointer": {
+        "pct_binary": 0.5626,
+        "is_binary": false
+      },
+      "sub_dep_pinning": {
+        "pct_binary": 0.6548,
+        "is_binary": false
+      },
+      "sub_doc_structure": {
+        "pct_binary": 0.6478,
+        "is_binary": false
+      },
+      "sub_docstring_coverage": {
+        "pct_binary": 0.234,
+        "is_binary": false
+      },
+      "sub_env_bootstrap": {
+        "pct_binary": 0.9622,
+        "is_binary": true
+      },
+      "sub_execution_entry_point": {
+        "pct_binary": 0.9125,
+        "is_binary": true
+      },
+      "sub_expected_outputs": {
+        "pct_binary": 0.4846,
+        "is_binary": false
+      },
+      "sub_hardware_requirements": {
+        "pct_binary": 1.0,
+        "is_binary": true
+      },
+      "sub_import_resolvability": {
+        "pct_binary": 0.7092,
+        "is_binary": false
+      },
+      "sub_inline_explanation_density": {
+        "pct_binary": 0.2459,
+        "is_binary": false
+      },
+      "sub_install_instructions": {
+        "pct_binary": 0.5957,
+        "is_binary": false
+      },
+      "sub_no_absolute_paths": {
+        "pct_binary": 0.773,
+        "is_binary": false
+      },
+      "sub_no_hardcoded_credentials": {
+        "pct_binary": 0.9787,
+        "is_binary": true
+      },
+      "sub_notebook_exec_order": {
+        "pct_binary": 0.6407,
+        "is_binary": false
+      },
+      "sub_python_version_declared": {
+        "pct_binary": 1.0,
+        "is_binary": true
+      },
+      "sub_reuse_metadata": {
+        "pct_binary": 0.3853,
+        "is_binary": false
+      },
+      "sub_seed_management": {
+        "pct_binary": 0.8392,
+        "is_binary": false
+      },
+      "sub_silent_failure_masking": {
+        "pct_binary": 0.8747,
+        "is_binary": false
+      },
+      "sub_test_file_presence": {
+        "pct_binary": 0.9574,
+        "is_binary": true
+      },
+      "sub_usage_examples": {
+        "pct_binary": 0.6525,
+        "is_binary": false
+      },
+      "sub_workflow_orchestration": {
+        "pct_binary": 0.9433,
+        "is_binary": true
+      }
+    },
+    "binary_count": 10,
+    "total": 26
+  },
+  "rank_stability": {
+    "E": {
+      "min_tau": 0.9106,
+      "mean_tau": 0.9609,
+      "max_tau": 0.9981
+    },
+    "A": {
+      "min_tau": 0.9418,
+      "mean_tau": 0.9724,
+      "max_tau": 0.9963
+    },
+    "D": {
+      "min_tau": 0.9588,
+      "mean_tau": 0.9781,
+      "max_tau": 0.9969
+    },
+    "C": {
+      "min_tau": 0.9492,
+      "mean_tau": 0.9793,
+      "max_tau": 0.9989
+    },
+    "S": {
+      "min_tau": 0.9745,
+      "mean_tau": 0.9875,
+      "max_tau": 0.9991
+    }
+  },
+  "grid_search": {
+    "n_configs": 126,
+    "auc_min": 0.5088,
+    "auc_max": 0.581,
+    "auc_spread": 0.0722,
+    "best_auc": 0.581,
+    "best_weights": {
+      "E": 0.1,
+      "A": 0.1,
+      "D": 0.1,
+      "C": 0.2,
+      "S": 0.5
+    },
+    "default_auc": 0.5355,
+    "s_sensitivity_posthoc": {
+      "weights": {
+        "E": 0.3,
+        "A": 0.15,
+        "D": 0.2,
+        "C": 0.15,
+        "S": 0.25
+      },
+      "auc": 0.5438,
+      "delta_vs_default": 0.0083
+    }
+  },
+  "loco": {
+    "full_auc": 0.5355,
+    "ci_95": [
+      0.4711,
+      0.6016
+    ],
+    "removals": {
+      "-E": {
+        "auc": 0.5635,
+        "delta": 0.028
+      },
+      "-A": {
+        "auc": 0.5558,
+        "delta": 0.0204
+      },
+      "-D": {
+        "auc": 0.536,
+        "delta": 0.0006
+      },
+      "-C": {
+        "auc": 0.5131,
+        "delta": -0.0223
+      },
+      "-S": {
+        "auc": 0.5138,
+        "delta": -0.0216
+      }
+    },
+    "auc_span": 0.0503
+  },
+  "ros_rcs": {
+    "components_available": [
+      "I",
+      "X",
+      "N",
+      "E_prime"
+    ],
+    "components_unavailable": [
+      "delta",
+      "T"
+    ],
+    "avail_weight": 0.75,
+    "alpha": 0.525,
+    "N_source": "csv",
+    "ros_means_by_mode": {
+      "success": 100.0,
+      "install_dep": 13.51,
+      "missing_module": 40.51,
+      "missing_data": 54.48,
+      "code_error": 55.11
+    },
+    "rcs_means_by_mode": {
+      "success": 59.44,
+      "install_dep": 19.81,
+      "missing_module": 24.61,
+      "missing_data": 31.65,
+      "code_error": 35.7
+    },
+    "components_by_mode": {
+      "success": {
+        "I": 100.0,
+        "X": 100.0,
+        "N": 100.0,
+        "E_prime": 100.0
+      },
+      "install_dep": {
+        "I": 0.0,
+        "X": 0.0,
+        "N": 1.3,
+        "E_prime": 100.0
+      },
+      "missing_module": {
+        "I": 100.0,
+        "X": 0.0,
+        "N": 3.8,
+        "E_prime": 0.0
+      },
+      "missing_data": {
+        "I": 100.0,
+        "X": 0.0,
+        "N": 8.6,
+        "E_prime": 100.0
+      },
+      "code_error": {
+        "I": 100.0,
+        "X": 0.0,
+        "N": 13.3,
+        "E_prime": 100.0
+      }
+    },
+    "auc": {
+      "rrs": {
+        "auc": 0.5355,
+        "ci_95": [
+          0.4711,
+          0.6016
+        ]
+      },
+      "ros_partial": {
+        "auc": 1.0,
+        "ci_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "rcs": {
+        "auc": 0.9928,
+        "ci_95": [
+          0.9856,
+          0.9985
+        ]
+      }
+    },
+    "lift_rcs_over_rrs": 0.4574,
+    "lift_ros_over_rrs": 0.4645
+  },
+  "enhanced_baselines": {
+    "random": 0.5,
+    "count_based": 0.509,
+    "equal_weight_no_gate": 0.5405,
+    "equal_weight_gated": 0.5433,
+    "linear_default_weights": 0.5355,
+    "best_submetric": {
+      "name": "sub_notebook_exec_order",
+      "auc": 0.6379
+    },
+    "S_alone": 0.6109,
+    "E_alone": 0.5027,
+    "rrs": 0.5355,
+    "ros_partial": 1.0,
+    "rcs": 0.9928
+  },
+  "analysis_timestamp_utc": "2026-05-11T10:33:32.268214+00:00",
+  "bootstrap_B": 2000
+}

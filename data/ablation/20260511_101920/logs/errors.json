@@ -1,0 +1,37 @@
+[
+  {
+    "repo": "noemiandor/cloneid",
+    "stage": "clone",
+    "error": "timeout"
+  },
+  {
+    "repo": "disc04/simplydrug",
+    "stage": "clone",
+    "error": "timeout"
+  },
+  {
+    "repo": "apblair/CellLayers",
+    "stage": "clone",
+    "error": "timeout"
+  },
+  {
+    "repo": "bioexcel/biobb_remote",
+    "stage": "score",
+    "error": "[Errno 2] No such file or directory: '/home/ti89cos/ti89cos_reproscore/reproscore_ablation/data/ablation_repos/bioexcel__biobb_remote/bin/credentials.py'"
+  },
+  {
+    "repo": "saigerutherford/evidence_embracing_nm",
+    "stage": "clone",
+    "error": "timeout"
+  },
+  {
+    "repo": "danylodanylo/math-model-epileptogenesis",
+    "stage": "clone",
+    "error": "timeout"
+  },
+  {
+    "repo": "impires/JupyterNotebooksMotionlessActivities",
+    "stage": "clone",
+    "error": "timeout"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "schema": "reproscore-ablation-provenance/1.0",
+  "run_id": "20260511_101920",
+  "started_utc": "2026-05-11T10:19:25.038287+00:00",
+  "finished_utc": "2026-05-11T10:33:02.015602+00:00",
+  "parameters": {
+    "limit": 1000,
+    "workers": 8,
+    "skip_clone": false,
+    "python_only": true,
+    "date_cutoff": null,
+    "per_class_selected": 86,
+    "available_per_mode": {
+      "install_dep": 759,
+      "missing_module": 887,
+      "success": 105,
+      "code_error": 86,
+      "missing_data": 154
+    }
+  },
+  "software": {
+    "reproscore_git_commit": "unknown",
+    "python_version": "3.9.16 (main, Feb 22 2023, 01:57:33) \n[GCC 11.2.0]",
+    "platform": "Linux-4.18.0-425.13.1.el8_7.x86_64-x86_64-with-glibc2.28"
+  },
+  "ground_truth_db": {
+    "path": "/home/ti89cos/ti89cos_reproscore/reproscore_ablation/data/db.sqlite",
+    "size_bytes": 1492819968,
+    "mtime_utc": "2026-05-03T13:53:45+00:00",
+    "md5_first4mb": "6740abe8e413b27a99a27d21c125bcbe"
+  },
+  "sample_size": 430,
+  "failure_mode_counts": {
+    "code_error": 86,
+    "install_dep": 86,
+    "missing_data": 86,
+    "missing_module": 86,
+    "success": 86
+  },
+  "output_files": {
+    "scores_csv": "scores.csv",
+    "clone_log": "logs/clone.log",
+    "score_log": "logs/score.log",
+    "per_repo_dir": "repos/"
+  },
+  "zenodo_note": "This directory is intended for Zenodo archival. scores.csv is the primary dataset; repos/ contains per-repository provenance records with individual timestamps; logs/ contains full execution traces.",
+  "scored_count": 423,
+  "error_count": 7,
+  "failure_mode_scored": {
+    "code_error": 85,
+    "install_dep": 85,
+    "missing_data": 84,
+    "missing_module": 85,
+    "success": 84
+  }
+}
