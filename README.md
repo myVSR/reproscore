@@ -2,6 +2,8 @@
 
 **Separating Readiness from Outcome in Research Software Reproducibility Assessment**
 
+[![DOI](https://zenodo.org/badge/1237448640.svg)](https://doi.org/10.5281/zenodo.20154206)
+
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![Tests](https://img.shields.io/badge/tests-pytest-green.svg)](tests/)
 [![Best Paper Award](https://img.shields.io/badge/TPDL%202026-Best%20Paper%20Award-f57f17.svg)](https://arxiv.org/abs/2605.13275)
@@ -158,7 +160,7 @@ result = RRSScorer(rubric=rubric).score("/path/to/repo")
 
 ## Evaluation dataset
 
-The `data/ablation/20260511_101920/` directory contains results for 423 Python/Jupyter repositories stratified across five execution failure modes:
+The `data/ablation/20260511_101920/` directory contains results for 423 Python/Jupyter GitHub repositories drawn from biomedical publications indexed in PubMed Central ([Dataset of a Study of Computational reproducibility of Jupyter notebooks from biomedical publications](https://doi.org/10.5281/zenodo.8226725)) stratified across five execution failure modes:
 
 | Failure mode | n | Description |
 |---|---|---|
@@ -177,3 +179,9 @@ The `data/ablation/20260511_101920/` directory contains results for 423 Python/J
 ## License
 
 GNU General Public License v3.0 — see [LICENSE](LICENSE).
+
+
+## References:
+* Sheeba Samuel, Daniel Mietchen. (2024). [Computational reproducibility of Jupyter notebooks from biomedical publications](https://doi.org/10.1093/gigascience/giad113), GigaScience, 13:giad113, 2024.
+* Sheeba Samuel and Daniel Mietchen. FAIR Jupyter: A Knowledge Graph Approach to Semantic Sharing and Granular Exploration of a Computational Notebook Reproducibility Dataset. In Special Issue on Resources for Graph Data and Knowledge. Transactions on Graph Data and Knowledge (TGDK), Volume 2, Issue 2, pp. 4:1-4:24, Schloss Dagstuhl – Leibniz-Zentrum für Informatik (2024) https://doi.org/10.4230/TGDK.2.2.4
+* Sheeba Samuel, & Daniel Mietchen. (2023). [Dataset of a Study of Computational reproducibility of Jupyter notebooks from biomedical publications](https://doi.org/10.5281/zenodo.8226725) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.8226725
