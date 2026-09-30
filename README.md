@@ -4,10 +4,15 @@
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![Tests](https://img.shields.io/badge/tests-pytest-green.svg)](tests/)
+[![Best Paper Award](https://img.shields.io/badge/TPDL%202026-Best%20Paper%20Award-f57f17.svg)](https://arxiv.org/abs/2605.13275)
 
 ReproScore is a two-tier scoring framework for assessing the reproducibility of research software repositories. It separates *reproducibility readiness* (what a repository contains) from *reproducibility outcome* (whether the software actually runs), making the distinction explicit and measurable.
 
+🏆 **Best Paper Award** at the 30th International Conference on Theory and Practice of Digital Libraries (TPDL 2026).
+
 **Author**: Sheeba Samuel · [sheeba.samuel@informatik.tu-chemnitz.de](mailto:sheeba.samuel@informatik.tu-chemnitz.de) · Chemnitz University of Technology
+
+**Paper**: [Preprint (arXiv)](https://arxiv.org/abs/2605.13275) · [Slides](https://doi.org/10.5281/zenodo.22905544)
 
 ---
 
